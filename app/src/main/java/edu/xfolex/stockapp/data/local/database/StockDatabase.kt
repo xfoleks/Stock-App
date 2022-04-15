@@ -2,6 +2,7 @@ package edu.xfolex.stockapp.data.local.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import edu.xfolex.stockapp.data.local.dao.StockDao
 import edu.xfolex.stockapp.data.local.entities.CompanyListingEntity
 
 @Database(
@@ -11,5 +12,5 @@ import edu.xfolex.stockapp.data.local.entities.CompanyListingEntity
 
 abstract class StockDatabase: RoomDatabase() {
 
-    abstract val dao: StockDatabase
+    abstract val dao: StockDao
 }
