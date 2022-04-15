@@ -1,1 +1,0 @@
-This repository contains the Stock App.
