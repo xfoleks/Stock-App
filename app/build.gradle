@@ -4,7 +4,7 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'kotlin-parcelize'
-    id 'com.google.devtools.ksp' version '1.6.20-1.0.5'
+    id 'com.google.devtools.ksp' version '1.6.10-1.0.2'
 }
 
 kotlin {
@@ -95,7 +95,7 @@ dependencies {
     implementation "androidx.hilt:hilt-navigation-compose:$hilt_navigation_compose"
 
     // Retrofit
-    implementation "com.squareup.retrofit2:retrofit2:$retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-moshi:$convertor_moshi"
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_version"
