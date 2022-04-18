@@ -20,6 +20,7 @@ import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 import edu.xfolex.stockapp.presentation.company_listings.events.CompanyListingsEvent
 import edu.xfolex.stockapp.presentation.company_listings.items.CompanyItem
 import edu.xfolex.stockapp.presentation.company_listings.viewmodel.CompanyListingsViewModel
+import edu.xfolex.stockapp.presentation.destinations.CompanyInfoScreenDestination
 
 @Composable
 @Destination(start = true)
@@ -65,7 +66,9 @@ fun CompanyListingsScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-                                // TODO: Add navigation to detail screen
+                                navigator.navigate(
+                                    CompanyInfoScreenDestination(company.symbol)
+                                )
                             }
                             .padding(16.dp)
                     )

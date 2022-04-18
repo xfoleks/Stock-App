@@ -28,7 +28,6 @@ ext {
     opencsv_version = '5.6'
     lifecycle_viewmodel_compose_version = '2.4.1'
     desugar_version = '1.1.5'
-    material_compose_version ='1.2.0-aplha07'
     accompanist_version = '0.24.6-alpha'
     compose_destinations_version = '1.4.4-beta'
     dagger_version = '2.41'

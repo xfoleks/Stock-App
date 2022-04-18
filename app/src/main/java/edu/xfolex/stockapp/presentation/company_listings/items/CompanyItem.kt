@@ -6,6 +6,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -27,7 +28,7 @@ fun CompanyItem(
             Row(modifier = Modifier.fillMaxWidth()) {
                 Text(
                     text = company.name,
-                    fontWeight = FontWeight.Bold,
+                    fontWeight = FontWeight.SemiBold,
                     fontSize = 16.sp,
                     color = MaterialTheme.colors.onBackground,
                     overflow = TextOverflow.Ellipsis,
@@ -41,6 +42,12 @@ fun CompanyItem(
                     color = MaterialTheme.colors.onBackground
                 )
             }
+            Spacer(modifier = Modifier.width(8.dp))
+            Text(
+                text = "(${company.symbol})",
+                fontStyle = FontStyle.Italic,
+                color = MaterialTheme.colors.onBackground
+            )
         }
     }
 }

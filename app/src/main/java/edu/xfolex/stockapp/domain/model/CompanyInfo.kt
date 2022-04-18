@@ -1,7 +1,5 @@
 package edu.xfolex.stockapp.domain.model
 
-import com.squareup.moshi.Json
-
 data class CompanyInfo(
     val symbol: String,
     val description: String,
